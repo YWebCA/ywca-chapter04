@@ -175,6 +175,18 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_mrW9RQxlGk).
 
+<!--
+1.  Create a function called `objects`
+2.  Within the function create a variable called `barkSound` set to 'BARK!'.
+4.  Within the function create an object and store it in the variable `fido`.
+5.  `fido` should have a property `.isAgoodBoy` set to true.
+6.  `fido` should have a property `.getBark()` that is a function that returns
+    the value of `barkSound`.
+7.  `fido` should have a property `.setBark()` that is a function that accepts
+    an argument and sets `barkSound` to the argument's value.
+8.  TODO! 
+-->
+
 <br / >
 
 * * *
