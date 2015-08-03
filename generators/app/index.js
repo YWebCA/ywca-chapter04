@@ -39,6 +39,10 @@ module.exports = yeoman.generators.Base.extend({
         this.templatePath('_list.js'),
         this.destinationPath('list.js')
       )
+      this.fs.copy(
+        this.templatePath('_compare.js'),
+        this.destinationPath('compare.js')
+      )
 
     }
   }
