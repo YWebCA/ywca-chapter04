@@ -1,3 +1,0 @@
-describe( 'Recursion exercise', function () {
-  
-} );

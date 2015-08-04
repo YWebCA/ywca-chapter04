@@ -8,7 +8,6 @@
 
 
 
-
 /*-----------------------------    PROPERTIES    ----------------------------*/
 
 
@@ -43,10 +42,6 @@
 
 
 /*--------------------------    THE MATH OBJECT    --------------------------*/
-
-
-
-/*-------------------------    THE GLOBAL OBJECT    -------------------------*/
 
 
 
@@ -132,8 +127,9 @@
 
 
 
+// I told you there was a monster at the end of this book!
 
 if(!Exer) Exer = {};
 for (value in this)
   Exer[value] = this[value]; 
-module.exports = Exer;
+if(module) module.exports = Exer;

@@ -121,20 +121,20 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 3.  The argument passed will have the methods `.setBark()`, `.getBark()`,
     `.bark()`, and `.isAGoodBoy()`.
 
-    > Note: `.setBark()` sets a value for private member we can call
-    > `.barkSound` using the argument passed to it.
+    > Note: `.setBark()` sets a value for a private member `.barkSound` which we
+    > can only access using `.setBark()` and `.getBark()`.
 
-    > Note: `.getBark()` gets and returns a value for private member we can call
+    > Note: `.getBark()` gets and returns a value for private member
     > `.barkSound`.
 
-    > Note: `.isAGoodBoy` sets a value for private member we can call `.goodBoy`
-    > and if it recieves an argument sets `.goodBoy` to that value.
+    > Note: `.isAGoodBoy()` sets a value for private member `.goodBoy`. If
+    > `.isAGoodBoy()` recieves an argument, it sets `.goodBoy` to that value.
 
     > Note: `.bark()` will log the current `.barkNoise`.
 
 4.  Call `.bark()`.
 
-5.  If `.isAGoodBoy()` returns true when given no arguments call `.setBark()`
+5.  If `.isAGoodBoy()` returns true when given no arguments, call `.setBark()`
     with the argument `'arf...'`.
 
 6.  Else `.setBark()` with the argument `'whimper'`.
@@ -155,24 +155,25 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_cqg63Sxe3o).
 
-1.  Create a function called `objects`
+1.  Create a function called `objects`.
 
-2.  Within the function create a variable called `barkSound` set to 'BARK!'.
+2.  Within the function create a variable called `barkSound` set to `'BARK!'`.
 
 3.  Within the function create an object and store it in the variable `fido`.
+    `fido` should...
 
-4.  `fido` should have a property `.isAgoodBoy` set to true.
+    1.  have a property `.isAgoodBoy` set to true.
 
-5.  `fido` should have a property `.getBark()` that is a function that returns
-    the value of `barkSound`.
+    2.  have a property `.getBark()` that is a function that returns the value
+        of `barkSound`.
 
-6.  `fido` should have a property `.setBark()` that is a function that accepts
-    an argument and sets `barkSound` to the argument's value.
+    3.  have a property `.setBark()` that is a function that accepts
+        an argument and sets `barkSound` to the argument's value.
 
-7. `fido` should have a property `.tricks` that is an array set to `['roll over', 'fetch', 'play Beethoven's 5th]`.
+    4.  have a property `.tricks` that is an array set to
+        `['roll over', 'fetch', 'play Beethoven's 5th]`.
 
-8. Return `fido`.
-
+4. Return `fido`.
 
 <br / >
 
@@ -184,17 +185,19 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_C3n45IkMhg).
 
-1. Create a function called `mutability`.
+1.  Create a function called `mutability`.
 
-2. `mutability` should accept two arguments. They will both be objects.
+2.  `mutability` should accept two arguments. They will both be objects.
 
-3. Both objects will have the properties `.color`, `.quantity`, `.isA`
+3.  Both objects will have the properties `.color`, `.quantity`, and `.isA`.
 
-4. If both objects are the same (as in `==`), then `console.log()` either object.
+4.  If both objects are the same (as in `==`), then `console.log()`
+    either object.
 
-5. Otherwise, for each proper that is equal `console.log` `"{property} matches"`.
+5.  Otherwise, for each property that is equal, `console.log`
+    `"{property} matches"`.
 
-6. If none of the properties match, `console.log` both objects.
+6.  If none of the properties match, `console.log` both objects.
 
 <br / >
 
@@ -206,25 +209,28 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_mrW9RQxlGk).
 
-1. Create a function called `maps`
+1. Create a function called `maps`.
 
 2. `maps` will receive a map of user accounts.
-    > Note: The keys for this map  will be the names of users.
+
+    > Note: The keys for this map will be the names of users.
+
     > Note: The values for this map will be a map account information.
-    > Note: The map of account information will have the keys `"payed"`, `"owed"`,
-      and `"due"`, where `"payed"` and `"due"` will be dates and `"owed"` will
-      be a number value.
 
-4. Each day accounts are processed for users whose first name start with a
-   different letter. Today's letter is `'T'`.
+    > Note: The map of account information will have the keys `"payed"`,
+      `"owed"`, and `"due"`, where `"payed"` and `"due"` will be dates and
+      `"owed"` will be a number value.
 
-5. We are looking to notify any user that their account is paid up. We will
-   `console.log` when `"owed"` is `0`.
+4.  Each day accounts are processed for users whose first name start with a
+    different letter. Today's letter is `'T'`.
 
-6. Use a `for (in)` loop to iterate through the users.
+5.  We are looking to notify any user whose account is paid up. We will
+    `console.log` when `"owed"` is `0`.
 
-7. When the the user name starts with a `'T'` and their `"owed"` is 0
-   `console.log` `"{user name} owes $0"`.
+6.  Use a `for (in)` loop to iterate through the users.
+
+7.  When the the user name starts with a `'T'` and their `"owed"` is `0`,
+    `console.log` `"{user name} owes $0"`.
 
 <br / >
 
@@ -236,16 +242,18 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_GFaxee4PuU).
 
-1. Create a function called `arrayology`.
+1.  Create a function called `arrayology`.
 
-2. `Arrayology` will recieve an array of strings.
+2.  `arrayology` will recieve an array of strings.
 
-3. Two of the strings in the array will have the value of `'fnord'`.
+3.  Two of the strings in the array will have the value of `'fnord'`.
 
-4. Use everything you know from the chapter section to remove all of the values
-   that occur between the `'fnord'`s from the array.
+4.  Use everything you know from the chapter section to remove all of the values
+    that occur between the `'fnord'`s from the array.
 
-5. Return the altered array.
+5.  Return the altered array.
+
+> Note: this function should have no side effects.
 
 <br / >
 
@@ -257,15 +265,17 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_mT4YQfwHp6).
 
-1. Create a function called `strings`.
+1.  Create a function called `strings`.
 
-2. `strings` will receive a string.
+2.  `strings` will receive a string.
 
-3. The string will contain the characters `'fnord'` once or twice.
+3.  The string will contain the characters `'fnord'` once or twice.
 
-4. When there are two `'fnord'`s, return the string that is all the character inbetween them.
+4.  When there are two `'fnord'`s, return the string that is all the characters
+    in between them.
 
-5. When there is one `'fnord'`, return the string that is all the characters after it.
+5.  When there is one `'fnord'`, return the string that is all the characters
+    after it.
 
 <br / >
 
@@ -277,13 +287,14 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_GstIcsgxyb).
 
-1. Create a function called `Arguments`.
+1.  Create a function called `arguments`.
 
-2. `arguments` epect to receve a variable number of arguments.
+2.  `arguments` expects to receive a varying number of arguments.
 
-3. `arguments` should use a loop to find the sum of all the arguments it recieves.
+3.  `arguments` should use a loop to find the sum of all the arguments it
+    recieves.
 
-4. `arguments` should return that sum. 
+4.  `arguments` should return that sum. 
 
 <br / >
 
@@ -295,13 +306,14 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_C51DnYk8WZ).
 
-1. Create a function called `math`.
+1.  Create a function called `math`.
 
-2. `math` will receive an argument that is a string or a number.
+2.  `math` will receive an argument that is a string or a number.
 
-3. If the argument is a string, return `Matha.PI`.
+3.  If the argument is a string, return `Math.PI`.
 
-4. If the ardument is a number, return a random number between `0` and the argument.
+4.  If the argument is a number, return a random number between `0` and
+    the argument.
 
 <br / >
 
@@ -341,6 +353,9 @@ been encrypted.
 Create another function called `decrypt` that accepts two parameters: a string
 to decrypt and the key the string has been shifted with. `decrypt` should return
 the decrypted string.
+
+> Note: to avoid the pain of dealing with ASCII values, create a helper array
+> that contains each letter of the alphabet in alphabetical order.
 
 <br />
 
@@ -386,11 +401,16 @@ returns a doubly-linked list. Each node of the list should have three members:
 Write four helper functions (you may want to do this before writing
 `arrayToDLL`) that handle doubly-linked lists:
 
-* `push( value )` adds a node with the value given to the end of the list.
-* `pop()` removes a node from the end of the list and returns its value.
-* `shift()` removes a node from the beginning of the list and returns its value.
-* `unshift( value )` adds a node with the value given to the beginning of
-  the list.
+*  `push( list, value )` adds a node with the value given to the end of the list.
+*  `pop( list )` removes a node from the end of the list and returns its value.
+*  `shift( list )` removes a node from the beginning of the list and returns
+    its value.
+*  `unshift( list, value )` adds a node with the value given to the beginning of
+   the list.
+
+> Note: Remember that a list knows when it gets to the end when its `next` or
+> `prev` value is `null`. Make sure that holds when you add or remove nodes from
+> the end!
 
 <br />
 
@@ -408,7 +428,8 @@ Once you have completed the specifications in the book...
 
 ### Deep Clone
 
-Much like JavaScript doesn't come with a pre-built deep comparison function, it doesn't come with a deep copy function either. So let's write one.
+Much like JavaScript doesn't come with a pre-built deep comparison function, it
+doesn't come with a deep copy function either. So let's write one.
 
 `deepClone` should accept an object. It will return a copy of that object.
 `deepClone` must be recursive in order to work properly.

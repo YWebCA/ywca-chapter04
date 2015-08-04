@@ -1,3 +1,0 @@
-describe( "Minimum exercise", function () {
-  
-} );

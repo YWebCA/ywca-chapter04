@@ -12,4 +12,4 @@
 if(!Exer) Exer = {};
 for (value in this)
   Exer[value] = this[value]; 
-module.exports = Exer;
+if(module) module.exports = Exer;
