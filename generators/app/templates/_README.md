@@ -284,7 +284,17 @@ the decrypted string.
 
 ## Reversing an Array
 
+The instructions for this exercise can be found in [this section of the text](http://eloquentjavascript.net/04_data.html#h_nSTX34CM1M).
+
+Work your solution in `./array.js`.
+
+Once you have completed the specifications in the book...
+
 ### Once More with Recursion
+
+Create a function called `reverseArrayRecur` that accepts one parameter
+(an array) and returns that array reversed. This function should use recursion
+to build its result.
 
 <br />
 
@@ -294,7 +304,27 @@ the decrypted string.
 
 ## A List
 
+The instructions for this exercise can be found in [this section of the text](http://eloquentjavascript.net/04_data.html#h_nSTX34CM1M).
+
+Work your solution in `./list.js`.
+
+Once you have completed the specifications in the book...
+
 ### A Doubly-Linked List
+
+In a doubly-linked list, each node points to both its previous node and its
+next. Write a function called `arrayToDLL` that takes an array parameter and
+returns a doubly-linked list. Each node of the list should have three members:
+`value`, `prev`, and `next`.
+
+Write four helper functions (you may want to do this before writing
+`arrayToDLL`) that handle doubly-linked lists:
+
+* `push( value )` adds a node with the value given to the end of the list.
+* `pop()` removes a node from the end of the list and returns its value.
+* `shift()` removes a node from the beginning of the list and returns its value.
+* `unshift( value )` adds a node with the value given to the beginning of
+  the list.
 
 <br />
 
@@ -304,4 +334,15 @@ the decrypted string.
 
 ## Deep Comparison
 
+The instructions for this exercise can be found in [this section of the text](http://eloquentjavascript.net/04_data.html#h_IJBU+aXOIC).
+
+Work your solution in `./compare.js`.
+
+Once you have completed the specifications in the book...
+
 ### Deep Clone
+
+Much like JavaScript doesn't come with a pre-built deep comparison function, it doesn't come with a deep copy function either. So let's write one.
+
+`deepClone` should accept an object. It will return a copy of that object.
+`deepClone` must be recursive in order to work properly.
