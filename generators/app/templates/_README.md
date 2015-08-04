@@ -135,7 +135,7 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 4.  Call `.bark()`.
 
 5.  If `.isAGoodBoy()` returns true when given no arguments call `.setBark()`
-    with the argument 'arf...'.
+    with the argument `'arf...'`.
 
 6.  Else `.setBark()` with the argument `'whimper'`.
 
@@ -155,6 +155,25 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_cqg63Sxe3o).
 
+1.  Create a function called `objects`
+
+2.  Within the function create a variable called `barkSound` set to 'BARK!'.
+
+3.  Within the function create an object and store it in the variable `fido`.
+
+4.  `fido` should have a property `.isAgoodBoy` set to true.
+
+5.  `fido` should have a property `.getBark()` that is a function that returns
+    the value of `barkSound`.
+
+6.  `fido` should have a property `.setBark()` that is a function that accepts
+    an argument and sets `barkSound` to the argument's value.
+
+7. `fido` should have a property `.tricks` that is an array set to `['roll over', 'fetch', 'play Beethoven's 5th]`.
+
+8. Return `fido`.
+
+
 <br / >
 
 * * *
@@ -164,6 +183,18 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 ## Mutability
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_C3n45IkMhg).
+
+1. Create a function called `mutability`.
+
+2. `mutability` should accept two arguments. They will both be objects.
+
+3. Both objects will have the properties `.color`, `.quantity`, `.isA`
+
+4. If both objects are the same (as in `==`), then `console.log()` either object.
+
+5. Otherwise, for each proper that is equal `console.log` `"{property} matches"`.
+
+6. If none of the properties match, `console.log` both objects.
 
 <br / >
 
@@ -175,17 +206,25 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_mrW9RQxlGk).
 
-<!--
-1.  Create a function called `objects`
-2.  Within the function create a variable called `barkSound` set to 'BARK!'.
-4.  Within the function create an object and store it in the variable `fido`.
-5.  `fido` should have a property `.isAgoodBoy` set to true.
-6.  `fido` should have a property `.getBark()` that is a function that returns
-    the value of `barkSound`.
-7.  `fido` should have a property `.setBark()` that is a function that accepts
-    an argument and sets `barkSound` to the argument's value.
-8.  TODO! 
--->
+1. Create a function called `maps`
+
+2. `maps` will receive a map of user accounts.
+    > Note: The keys for this map  will be the names of users.
+    > Note: The values for this map will be a map account information.
+    > Note: The map of account information will have the keys `"payed"`, `"owed"`,
+      and `"due"`, where `"payed"` and `"due"` will be dates and `"owed"` will
+      be a number value.
+
+4. Each day accounts are processed for users whose first name start with a
+   different letter. Today's letter is `'T'`.
+
+5. We are looking to notify any user that their account is paid up. We will
+   `console.log` when `"owed"` is `0`.
+
+6. Use a `for (in)` loop to iterate through the users.
+
+7. When the the user name starts with a `'T'` and their `"owed"` is 0
+   `console.log` `"{user name} owes $0"`.
 
 <br / >
 
@@ -197,6 +236,17 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_GFaxee4PuU).
 
+1. Create a function called `arrayology`.
+
+2. `Arrayology` will recieve an array of strings.
+
+3. Two of the strings in the array will have the value of `'fnord'`.
+
+4. Use everything you know from the chapter section to remove all of the values
+   that occur between the `'fnord'`s from the array.
+
+5. Return the altered array.
+
 <br / >
 
 * * *
@@ -206,6 +256,16 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 ## Strings and Their Properties
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_mT4YQfwHp6).
+
+1. Create a function called `strings`.
+
+2. `strings` will receive a string.
+
+3. The string will contain the characters `'fnord'` once or twice.
+
+4. When there are two `'fnord'`s, return the string that is all the character inbetween them.
+
+5. When there is one `'fnord'`, return the string that is all the characters after it.
 
 <br / >
 
@@ -217,6 +277,14 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_GstIcsgxyb).
 
+1. Create a function called `Arguments`.
+
+2. `arguments` epect to receve a variable number of arguments.
+
+3. `arguments` should use a loop to find the sum of all the arguments it recieves.
+
+4. `arguments` should return that sum. 
+
 <br / >
 
 * * *
@@ -227,15 +295,13 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_C51DnYk8WZ).
 
-<br / >
+1. Create a function called `math`.
 
-* * *
+2. `math` will receive an argument that is a string or a number.
 
-<br / >
+3. If the argument is a string, return `Matha.PI`.
 
-## The Global Object
-
-This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_lRBZxXmo93).
+4. If the ardument is a number, return a random number between `0` and the argument.
 
 <br / >
 
