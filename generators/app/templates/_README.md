@@ -399,7 +399,7 @@ returns a doubly-linked list. Each node of the list should have three members:
 `value`, `prev`, and `next`.
 
 Write four helper functions (you may want to do this before writing
-`arrayToDLL`) that handle doubly-linked lists:
+`arrayToDLL)` that handle doubly-linked lists:
 
 #### `push( list, value )`
 
