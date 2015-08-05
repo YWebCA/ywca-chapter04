@@ -9,7 +9,12 @@
 
 
 /***********************    DANGER ZONE DO NOT CROSS    ***********************/
-if(!Exer) Exer = {};
-for (value in this)
-  Exer[value] = this[value]; 
-if(module) module.exports = Exer;
+
+if (typeof Exer === 'undefined') Exer = {};
+
+if (typeof range !== 'undefined') Exer.range = range;
+if (typeof encrypt !== 'undefined') Exer.encrypt = encrypt;
+if (typeof decrypt !== 'undefined') Exer.decrypt = decrypt;
+
+if (typeof module === 'undefined') module = {};
+module.exports = Exer;
