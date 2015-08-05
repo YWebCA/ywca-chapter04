@@ -9,7 +9,12 @@
 
 
 /***********************    DANGER ZONE DO NOT CROSS    ***********************/
-if(!Exer) Exer = {};
-for (value in this)
-  Exer[value] = this[value]; 
-if(module) module.exports = Exer;
+if (typeof Exer === 'undefined') Exer = {};
+
+if (typeof reverseArray !== 'undefined') Exer.reverseArray = reverseArray;
+if (typeof reverseArrayInPlace !== 'undefined') Exer.reverseArrayInPlace = reverseArrayInPlace;
+if (typeof reverseArrayRecur !== 'undefined') Exer.reverseArrayRecur = reverseArrayRecur;
+
+if (typeof module === 'undefined') module = {};
+module.exports = Exer;
+
