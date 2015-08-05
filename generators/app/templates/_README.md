@@ -1,6 +1,6 @@
-# Chapter 3: <small>Functions</small>
+# Chapter 4: <small>Data Structures: Objects and Arrays</small>
 
-Welcome to *Eloquent JavaScript*, Chapter 3!
+Welcome to *Eloquent JavaScript*, Chapter 4!
 
 These are the instructions for the exercises in Chapter 4. Render them in
 Mardown for maximum readablility. Remember that all your work will be done in
@@ -114,9 +114,9 @@ This exercise corresponds to [this section of the text](http://eloquentjavascrip
 
 This exercise corresponds to [this section of the text](http://eloquentjavascript.net/04_data.html#h_fkrGgDyRWc).
 
-1.  Create a function named `properties`.
+1.  Create a function named `methods`.
 
-2.  `properties` should accept one parameter.
+2.  `methods` should accept one parameter.
 
 3.  The argument passed will have the methods `.setBark()`, `.getBark()`,
     `.bark()`, and `.isAGoodBoy()`.
