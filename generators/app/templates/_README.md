@@ -401,16 +401,60 @@ returns a doubly-linked list. Each node of the list should have three members:
 Write four helper functions (you may want to do this before writing
 `arrayToDLL`) that handle doubly-linked lists:
 
-*  `push( list, value )` adds a node with the value given to the end of the list.
-*  `pop( list )` removes a node from the end of the list and returns its value.
-*  `shift( list )` removes a node from the beginning of the list and returns
-    its value.
-*  `unshift( list, value )` adds a node with the value given to the beginning of
-   the list.
+#### `push( list, value )`
 
-> Note: Remember that a list knows when it gets to the end when its `next` or
-> `prev` value is `null`. Make sure that holds when you add or remove nodes from
-> the end!
+Adds a node with the value given to the end of the list.
+
+1.  Create a new node.
+    * Its `value` should be parameter `value`
+    * Its `next` should be `null`.
+2.  Find the last node in the `list` (`lastNode`).
+3.  Set `lastNode`'s `next` to the new node.
+4.  The new node's `prev` should be `lastNode`.
+
+#### `pop( list )`
+
+Removes a node from the end of the list and returns its value.
+
+1.  Find the second-to-last node in the `list` (`secondToLast`).
+2.  Store the last node's value in a variable.
+3.  Set `secondToLast`'s `next` to `null`.
+4.  Return the stored value.
+
+#### `shift( list )`
+
+Removes a node from the beginning of the list and returns its value.
+
+This is a tricky one because of how JavaScript passes objects. The shell of the
+object is passed by value while its insides are passed by reference. This means
+that changes you make to the passed object will hold, but if you try to reassign
+the object completely, any changes you make afterward may not stick.
+
+We will actually remove the second node, but keep the second node's guts in the
+first node.
+
+1.  Store the first node's `value` in a variable.
+2.  Store the second node's `value` in the first node's `value`.
+3.  Find the third node (`third`).
+3.  Set the first node's `next` to `third`.
+4.  Set `third`'s `prev` to the first node.
+5.  Return the stored value.
+
+#### `unshift( list, value )`
+
+Adds a node with the value given to the beginning of the list.
+
+This is also a tricky one. We will create a new second node, put the first
+node's guts in it, and put the new guts in the first node.
+
+1.  Find the second node (`second`).
+2.  Create a new node.
+    * Its `value` should be the first node's `value`.
+    * Its `next` should be `second`.
+    * Its `prev` should be the first node.
+3.  Set `second`'s `prev` to the new node.
+4.  Set the first node's `next` to the new node.
+5.  Set the first node's `value` to the parameter `value`.
 
 <br />
 
