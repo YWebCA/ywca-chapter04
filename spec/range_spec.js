@@ -82,12 +82,48 @@ describe( 'The Sum of a Range', function () {
     } );
   } );
   describe( 'Caeser Cipher', function () {
-    it( 'should declare a function called `encrypt`' );
-    describe( 'declares encrypt(), a function that', function () {
-      it( 'should expect two parameters' );
-      it( 'should return a string' );
-      it( 'given "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG" and "D", should return "WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ"' );
+    it( 'should declare a function called `encrypt`', function () {
+      expect( typeof Exer.encrypt ).toBe( 'function' );
     } );
-    it( 'should declare a function called `decrypt`' );
+    describe( 'declares encrypt(), a function that', function () {
+      it( 'should expect two parameters', function () {
+        expect( Exer.encrypt.length ).toBe(2);
+      } );
+      it( 'should return a string', function () {
+        expect( typeof Exer.encrypt('ABC','B') ).toBe( 'string' );
+      } );
+      it( 'given "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG" and "D", should '
+        + 'return "WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ"', function () {
+        expect( Exer.encrypt("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG","D") )
+          .toBe( "WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ" );
+      });
+      it( 'given "IF YOU MEET THE BUDDHA ON THE ROAD KILL HIM" and "Z", should '
+        + 'return "HE XNT LDDS SGD ATCCGZ NM SGD QNZC JHKK GHL"', function () {
+        expect( Exer.encrypt("IF YOU MEET THE BUDDHA ON THE ROAD KILL HIM","Z") )
+          .toBe( "HE XNT LDDS SGD ATCCGZ NM SGD QNZC JHKK GHL" );
+      } );
+    } );
+    it( 'should declare a function called `decrypt`', function () {
+      expect( typeof Exer.decrypt ).toBe( 'function' );
+    } );
+    describe( 'declares decrypt(), a function called that', function () {
+      it( 'should expect two parameters', function () {
+        expect( Exer.decrypt.length ).toBe(2);
+      } );
+      it( 'should return a string', function () {
+        expect( typeof Exer.decrypt('ABC','B') ).toBe( 'string' );
+      } );
+      it( 'given "GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT" and "N", should '
+        + 'return "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG"', function () {
+        expect( Exer.decrypt("GUR DHVPX OEBJA SBK WHZCF BIRE GUR YNML QBT","N") )
+          .toBe( "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG" );
+      } );
+      it( 'given "PM FVB TLLA H TBYKLYLY VU AOL YVHK ZOVD OPT AOL DHF" AND '
+        + '"H", SHOULD RETURN "IF YOU MEET A MURDERER ON THE ROAD SHOW HIM '
+        + 'THE WAY"', function () {
+        expect( Exer.decrypt("PM FVB TLLA H TBYKLYLY VU AOL YVHK ZOVD OPT AOL DHF","H") )
+          .toBe( "IF YOU MEET A MURDERER ON THE ROAD SHOW HIM THE WAY" );
+      } );
+    } );
   } );
 } );
