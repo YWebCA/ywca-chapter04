@@ -1,4 +1,4 @@
-Exer.range = function ( start, end, step ) {
+var range = function ( start, end, step ) {
   step = step || 1;
   var result = [];
   for (
@@ -9,7 +9,7 @@ Exer.range = function ( start, end, step ) {
   return result;
 };
 
-Exer.sum = function ( array ) {
+var sum = function ( array ) {
   var result = 0;
   for ( var i = 0; i < array.length; i++ )
     result += array[i];
@@ -37,11 +37,11 @@ var crypt = function ( string, shift, encrypt ) {
   return result;
 }
 
-Exer.encrypt = function ( string, shift ) {
+var encrypt = function ( string, shift ) {
   return crypt( string, shift, true );
 };
 
-Exer.decrypt = function ( string, shift ) {
+var decrypt = function ( string, shift ) {
   return crypt( string, shift, false );
 };
 
