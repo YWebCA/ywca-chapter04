@@ -18,7 +18,7 @@
     "ywca",
     "core",
     "exercises",
-    "chapter03"
+    "chapter04"
   ],
   "dependencies": {
     "chalk": "^1.0.0",

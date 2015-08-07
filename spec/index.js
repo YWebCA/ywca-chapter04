@@ -8,6 +8,7 @@ jasmine.loadConfig({
     'spec.js',
     'range_spec.js',
     'array_spec.js',
+    'compare_spec.js',
     'list_spec.js'
   ],
   helpers: [
@@ -15,6 +16,7 @@ jasmine.loadConfig({
     'answers/index.js',
     'answers/range.js',
     'answers/array.js',
+    'answers/compare.js',
     'answers/list.js'
   ]
 });
